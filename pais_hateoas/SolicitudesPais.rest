@@ -1,0 +1,30 @@
+###### Agregar Pais
+POST http://127.0.0.1:6001/paises HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombrePais": "chile"
+}
+
+###### Obtener todos los Paises
+GET http://127.0.0.1:6001/paises HTTP/1.1
+Content-Type: application/json
+
+
+###### Obtener Pais por ID
+GET http://127.0.0.1:6001/paises/1 HTTP/1.1
+Content-Type: application/json
+
+
+###### Actualizar Pais
+PUT http://127.0.0.1:6001/paises/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombrePais": "edutech2.0"
+}
+
+
+###### Eliminar Pais
+DELETE http://127.0.0.1:6001/paises/4 HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,45 @@
+
+### LISTAR TODAS LAS DIRECCIONES
+
+GET http://localhost:6004/direccion
+Accept: application/json
+
+
+
+### BUSCAR DIRECCION POR ID
+
+GET http://localhost:6004/direccion/11
+Accept: application/json
+
+
+
+### CREAR DIRECCION
+
+POST http://localhost:6004/direccion
+Content-Type: application/json
+
+{
+  "calle": "perez rowwwman",
+  "numero": "1234",
+  "idComuna": 6
+}
+
+
+
+### ACTUALIZAR DIRECCION
+
+PUT http://localhost:6004/direccion/11
+Content-Type: application/json
+
+{
+  "calle": "perez roman",
+  "numero": "133",
+  "idComuna": 6
+}
+
+
+
+### ELIMINAR DIRECCION
+
+DELETE http://localhost:6004/direccion/10
+

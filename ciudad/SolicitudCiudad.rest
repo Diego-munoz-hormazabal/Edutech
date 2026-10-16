@@ -1,0 +1,44 @@
+### ===============================
+### LISTAR TODAS LAS CIUDADES
+### ===============================
+GET http://localhost:6002/ciudades
+Accept: application/json
+
+
+### ===============================
+### BUSCAR CIUDAD POR ID
+### ===============================
+GET http://localhost:6002/ciudades/1
+Accept: application/json
+
+
+### ===============================
+### CREAR NUEVA CIUDAD
+### ===============================
+POST http://localhost:6002/ciudades
+Content-Type: application/json
+
+{
+  "nombreCiudad": "Santiago",
+  "idPais":11
+  
+}
+
+
+### ===============================
+### ACTUALIZAR CIUDAD
+### ===============================
+PUT http://localhost:6002/ciudades/5
+Content-Type: application/json
+
+{
+  "nombreCiudad": "arica",
+  "idPais":11
+  
+}
+
+
+### ===============================
+### ELIMINAR CIUDAD
+### ===============================
+DELETE http://localhost:6002/ciudades/3

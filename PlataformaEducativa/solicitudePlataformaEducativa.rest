@@ -1,0 +1,49 @@
+### ============================
+### LISTAR PLATAFORMAS EDUCATIVAS
+### ============================
+GET http://localhost:6008/plataformas-educativas
+Accept: application/json
+
+
+### ============================
+### BUSCAR PLATAFORMA POR ID
+### ============================
+GET http://localhost:6008/plataformas-educativas/2
+Accept: application/json
+
+
+### ============================
+### CREAR PLATAFORMA EDUCATIVA
+### ============================
+POST http://localhost:6008/plataformas-educativas
+Content-Type: application/json
+
+{
+  "nombrePlataforma": "aa ",
+  "descripcion": "Plataforma educativa de código abierto",
+  "urlPlataforma": "https://moodle.org",
+  "idEmpresa":4
+
+}
+
+
+### ============================
+### ACTUALIZAR PLATAFORMA EDUCATIVA
+### ============================
+PUT http://localhost:6008/plataformas-educativas/2
+Content-Type: application/json
+
+{
+  "nombrePlataforma": "Moodle new",
+  "descripcion": "Plataforma LMS utilizada en educación superior",
+  "urlPlataforma": "https://moodle.org",
+  "idEmpresa":4
+
+}
+
+
+### ============================
+### ELIMINAR PLATAFORMA EDUCATIVA
+### ============================
+DELETE http://localhost:6008/plataformas-educativas/1
+Accept: application/json

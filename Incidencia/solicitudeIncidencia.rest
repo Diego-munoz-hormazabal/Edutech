@@ -1,0 +1,30 @@
+### LISTAR
+GET http://localhost:6014/incidencias
+
+### GUARDAR
+POST http://localhost:6014/incidencias
+Content-Type: application/json
+
+{
+  "titulo": "Error de acceso",
+  "descripcion": "No se puede acceder al curso",
+  "estado": "ABIERTA",
+  "idPlataforma": 2
+}
+
+### BUSCAR POR ID
+GET http://localhost:6014/incidencias/1
+
+### ACTUALIZAR
+PUT http://localhost:6014/incidencias/1
+Content-Type: application/json
+
+{
+  "titulo": "Error de acceso",
+  "descripcion": "Error corregido",
+  "estado": "CERRADA",
+  "idPlataforma": 2
+}
+
+### ELIMINAR
+DELETE http://localhost:6014/incidencias/1

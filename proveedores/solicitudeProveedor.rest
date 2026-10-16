@@ -1,0 +1,44 @@
+### ===============================
+### LISTAR PROVEEDORES
+### ===============================
+GET http://localhost:6006/proveedor
+Accept: application/json
+
+
+### ===============================
+### BUSCAR PROVEEDOR POR ID
+### ===============================
+GET http://localhost:6006/proveedor/4
+Accept: application/json
+
+
+### ===============================
+### CREAR PROVEEDOR
+### ===============================
+POST http://localhost:6006/proveedor
+Content-Type: application/json
+
+{
+  "nombreProveedor": "jeje",
+  "rutProveedor": "12223",
+  "idEmpresa": 4
+}
+
+
+### ===============================
+### ACTUALIZAR PROVEEDOR
+### ===============================
+PUT http://localhost:6006/proveedor/4
+Content-Type: application/json
+
+{
+  "nombreProveedor": "new",
+  "rutProveedor": "1342",
+  "idEmpresa": 4
+}
+
+
+### ===============================
+### ELIMINAR PROVEEDOR
+### ===============================
+DELETE http://localhost:6006/proveedor/8

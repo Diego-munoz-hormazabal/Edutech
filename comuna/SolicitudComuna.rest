@@ -1,0 +1,30 @@
+### LISTAR TODAS LAS COMUNAS
+GET http://localhost:6003/comunas HTTP/1.1
+
+
+### BUSCAR COMUNA POR ID
+GET http://localhost:6003/comunas/7 HTTP/1.1
+
+
+### CREAR COMUNA
+POST http://localhost:6003/comunas HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombreComuna": "pac",
+  "idCiudad":5
+}
+
+
+### ACTUALIZAR COMUNA
+PUT http://localhost:6003/comunas/5 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombreComuna": "La Cistena",
+  "idCiudad": 6
+}
+
+
+### ELIMINAR COMUNA
+DELETE http://localhost:6003/comunas/4 HTTP/1.1

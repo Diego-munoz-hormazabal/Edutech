@@ -1,0 +1,42 @@
+### Listar contenidos educativos
+GET http://localhost:6010/contenidos-educativos
+
+###
+
+### Buscar por ID
+GET http://localhost:6010/contenidos-educativos/1
+
+###
+
+### Crear contenido educativo
+POST http://localhost:6010/contenidos-educativos
+Content-Type: application/json
+
+{
+  
+  "nombreContenido": "fundamentos de programacion",
+  "tipoContenido": "VIDEO",
+  
+  "descripcion": "Curso básico de programación en Python", 
+  "idPlataforma": 2
+
+}
+
+###
+
+### Actualizar contenido educativo
+PUT http://localhost:6010/contenidos-educativos/2
+Content-Type: application/json
+
+{
+  "nombreContenido": "Java Intermedio",
+  "tipoContenido": "Curso intermedio",
+  "descripcion": "Curso básico de programación en java",
+  "idPlataforma": 2
+  
+}
+
+###
+
+### Eliminar contenido educativo
+DELETE http://localhost:6010/contenidos-educativos/2

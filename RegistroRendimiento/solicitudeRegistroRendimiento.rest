@@ -1,0 +1,42 @@
+### ================================
+### LISTAR REGISTRO RENDIMIENTO
+### ================================
+GET http://localhost:6013/registro-rendimiento
+
+
+### ================================
+### GUARDAR REGISTRO RENDIMIENTO
+### ================================
+POST http://localhost:6013/registro-rendimiento
+Content-Type: application/json
+
+{
+  "tiempoRespuesta": "200ms",
+  "disponibilidadRegistro": "ALTA",
+  "idPlataforma": 2
+}
+
+
+### ================================
+### BUSCAR REGISTRO POR ID
+### ================================
+GET http://localhost:6013/registro-rendimiento/1
+
+
+### ================================
+### ACTUALIZAR REGISTRO RENDIMIENTO
+### ================================
+PUT http://localhost:6013/registro-rendimiento/1
+Content-Type: application/json
+
+{
+  "tiempoRespuesta": "180ms",
+  "disponibilidadRegistro": "MUY_ALTA",
+  "idPlataforma": 2
+}
+
+
+### ================================
+### ELIMINAR REGISTRO RENDIMIENTO
+### ================================
+DELETE http://localhost:6013/registro-rendimiento/1

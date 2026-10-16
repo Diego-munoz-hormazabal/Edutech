@@ -1,0 +1,34 @@
+### PROGRESO - LISTAR
+GET http://localhost:5002/progreso-estudiantes
+
+
+### PROGRESO - CREAR
+POST http://localhost:5002/progreso-estudiantes
+Content-Type: application/json
+
+{
+  
+  "idUsuario": 1,
+  "porcentajeAvance": 45.5,
+  "estado": "EN_PROGRESO"
+}
+
+
+### PROGRESO - BUSCAR POR ID
+GET http://localhost:5002/progreso-estudiantes/1
+
+
+### PROGRESO - ACTUALIZAR
+PUT http://localhost:5002/progreso-estudiantes/1
+Content-Type: application/json
+
+{
+  
+  "idUsuario": 1,
+  "porcentajeAvance": 80.0,
+  "estado": "COMPLETADO"
+}
+
+
+### PROGRESO - ELIMINAR
+DELETE http://localhost:5002/progreso-estudiantes/1

@@ -1,0 +1,38 @@
+### Listar evaluaciones
+GET http://localhost:6012/evaluaciones
+
+###
+
+### Buscar evaluacion por ID
+GET http://localhost:6012/evaluaciones/1
+
+###
+
+### Crear evaluacion
+POST http://localhost:6012/evaluaciones
+Content-Type: application/json
+
+{
+  "nota": 3 ,
+  "fechaEvaluacion": "2024-06-15",
+  "idCurso": 4
+  
+}
+
+###
+
+### Actualizar evaluacion
+PUT http://localhost:6012/evaluaciones/1
+Content-Type: application/json
+
+{
+  "nota": 1,
+  "fechaEvaluacion": "2020-06-20",
+  "idCurso": 4
+  
+}
+
+###
+
+### Eliminar evaluacion
+DELETE http://localhost:6012/evaluaciones/9

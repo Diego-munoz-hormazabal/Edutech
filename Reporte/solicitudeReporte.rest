@@ -1,0 +1,36 @@
+### REPORTE - LISTAR TODOS
+GET http://localhost:6015/reportes
+
+
+### REPORTE - BUSCAR POR ID
+GET http://localhost:6015/reportes/6
+
+
+### REPORTE - CREAR
+POST http://localhost:6015/reportes
+Content-Type: application/json
+
+{
+  "titulo": "reportes",
+  "descripcion": "Reporte de desempeño del estudiante",
+  "tipo": "ACADEMICO",
+  "fecha": "2026-01-18",
+  "idPlataforma": 2
+}
+
+
+### REPORTE - ACTUALIZAR
+PUT http://localhost:6015/reportes/6
+Content-Type: application/json
+
+{
+  "titulo": "Reporte académico actualizado",
+  "descripcion": "Reporte corregido y validado",
+  "tipo": "ACADEMICO",
+  "fecha": "2026-01-19",
+  "idPlataforma": 2
+}
+
+
+### REPORTE - ELIMINAR
+DELETE http://localhost:6015/reportes/5

@@ -1,0 +1,42 @@
+### ===============================
+### LISTAR TODAS LAS CIUDADES
+### ===============================
+GET http://localhost:5000/ciudades
+Accept: application/json
+
+
+### ===============================
+### BUSCAR CIUDAD POR ID
+### ===============================
+GET http://localhost:5000/ciudades/3
+Accept: application/json
+
+
+### ===============================
+### CREAR NUEVA CIUDAD
+### ===============================
+POST http://localhost:5000/ciudades
+Content-Type: application/json
+
+{
+  "nombreCiudad": "sadsa",
+  "idPais":3
+}
+
+
+### ===============================
+### ACTUALIZAR CIUDAD
+### ===============================
+PUT http://localhost:5000/ciudades/17
+Content-Type: application/json
+
+{
+  "nombreCiudad": "arica",
+  "idPais":2
+}
+
+
+### ===============================
+### ELIMINAR CIUDAD
+### ===============================
+DELETE http://localhost:5000/ciudades/10
